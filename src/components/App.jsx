@@ -1,16 +1,14 @@
-export const App = () => {
+import { BookForm } from './BookForm/BookForm';
+// import React, { useEffect, useState } from 'react';
+import { BookList } from './BookList/BookList';
+import { BookFilter } from './BookFilter/BookFilter';
+
+export function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <BookForm />
+      <BookFilter />
+      <BookList />
+    </>
   );
-};
+}
